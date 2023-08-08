@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar"id="navbar">
+ <div style="display: flex; justify-content: space-between;"><h1 style="color:aliceblue; height: 25px; justify-content: left;">galaxy-diplomats</h1><button id="menub" onclick="myFunction()" ><i class='bx bx-menu' ></i></button></div>
+<div id="menu" class="menu">
+  <a id="buttonk" href="index.html" ><i class='bx bxs-home'></i>Главная</a>
+  <a id="buttonk" href="News.html"><i class='bx bx-news' ></i>Новости сайта</a>
+  <a id="buttonk" href="https://t.me/H0lod1ln1k"><i class='bx bxs-contact'></i>контакт с админом</a>
+  <div class="dropdown">
+   <button style="display: flex; justify-content: center;" id="buttonk" class="dropbtn"><i class='bx bx-search-alt-2'></i>Узнать о
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href="Holod.html"> Холод</a>
+     <a href="Vild.html">Вилд</a>
+     <a href="Nik.html">Ник Aурум</a>
+     <a href="Elen.html">Элен</a>
+   </div>
+ </div>
+</div>
+</div>
+
+<div style="padding: 20px 15px 2500px;font-size:30px;margin-top:120px;">
+  <p style="display: flex; justify-content: center;"><b>сюди щось добавиться</b></p>
+  <p style="display: flex; justify-content: center;">скоро</p>
+  <p style="display: flex; justify-content: center;">обіцяю</p>
+  </div>>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("menu");
+  var y = document.getElementById("menub");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.value="<i class='bx bx-caret-up'></i>"
+
+  } else {
+    x.style.display = "none";
+    y.value="close"
+  }
+}
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+</html>
