@@ -331,12 +331,6 @@ transition: 0.3s;
     margin-bottom: 0;
     margin-left:0;
   }
-  #menu{
-    display: none;
-  }
-  #menub{
-    display:flex
-  }
   #navbar {
     padding: 2px 1px 1px !important;
   }
@@ -392,14 +386,27 @@ transition: 0.3s;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  @media screen and (max-width:450px) {
+@media screen and (max-width:450px) {
     .logo{
       width:10%;
     }
   }
-  @media screen and (min_width:680px){
+@media screen and (min-width:680px){
     #menu{
       display: block;
     }
+  }
+}
+@media screen and (max-width:1000px){
+  #menu{
+    display: none;
+  }
+  #menub{
+    display:flex
+  }
+  .logo{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left:0;
   }
 }
